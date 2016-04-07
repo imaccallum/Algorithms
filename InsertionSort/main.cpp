@@ -20,9 +20,10 @@ void insertionSort (int a[], int n){
 
 int main(int argc, const char * argv[]) {
     
-    // Get size
+    // Get size and guard against negative size
     int size;
     std::cin >> size;
+    size = size < 0 ? 0 : size;
     
     // Get input array
     int a[size];
